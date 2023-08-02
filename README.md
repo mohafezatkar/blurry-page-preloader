@@ -1,6 +1,6 @@
 <div align="center">
   <img src="img/logo.png" alt="Logo" width="200" height="200">
-  <h1 align="center">Simple Progress Steps Widget</h1>
+  <h1 align="center">Blurry Page Preloader</h1>
 </div>
 
 <details>
@@ -26,7 +26,7 @@
 
 ## About
 
-This project is a progress steps widget built using HTML5, CSS3, and JavaScript. The widget provides a visual representation of progress through a series of steps, allowing users to navigate between steps and track their progress.
+This project is a blurry page preloader implemented using HTML5, CSS3, and JavaScript. It creates a visually appealing loading effect with a blurred background image and a percentage indicator.
 
 ### Built With
 * [![HTML5][HTML5]][HTML5-url]
@@ -35,7 +35,7 @@ This project is a progress steps widget built using HTML5, CSS3, and JavaScript.
 
 ## Usage
 
-To use the progress steps widget, follow these steps:
+To use the blurry page preloader in your project, follow these steps:
 
 1. Include the required HTML markup in your web page:
 
@@ -43,23 +43,14 @@ To use the progress steps widget, follow these steps:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Blurry Page Preloader</title>
 </head>
 <body>
-    <div class="container">
-        <div class="progress-container">
-            <div class="progress" id="progress"></div>
-                <div class="circle active">1</div>
-                <div class="circle">2</div>
-                <div class="circle">3</div>
-                <div class="circle">4</div>
-        </div>
-        <button class="btn" id="#prev" type="button" disabled>Prev</button>
-        <button class="btn" id="#next" type="button">Next</button>
-    </div>
-<script src="js/main.js"></script>
+    <section class="bg"></section>
+    <div class="loading-text">0%</div>
+    <script src="js/main.js"></script>
 </body>
 </html>
 ```
@@ -76,28 +67,11 @@ To use the progress steps widget, follow these steps:
 <script src="js/main.js"></script>
 ```
 
-4. Customize the number of steps by modifying the HTML markup. Add or remove <div class="circle"></div> elements as needed, and update the corresponding JavaScript code accordingly.
-
-5. Run the web page in a web browser to see the progress steps widget in action. You should be able to navigate between steps using the "Prev" and "Next" buttons.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## JavaScript Functionality
 
-The JavaScript code included in the project provides the functionality for the progress steps widget. It allows users to move forward or backward through the steps and updates the visual representation of the progress.
-
-The key JavaScript functions used in this project are:
-
-* `next`: This function is called when the "Next" button is clicked. It increments the `currentActive` variable, ensuring it does not exceed the total number of steps. Then, it calls the `update` function to update the widget's appearance.
-
-* `prev`: This function is called when the "Prev" button is clicked. It decrements the `currentActive` variable, making sure it does not go below 1 (the first step). It then calls the `update` function to update the widget's appearance.
-
-* `update`: This function updates the widget's appearance based on the current step (`currentActive`). It enables or disables the "Prev" and "Next" buttons as necessary, adds the "active" class to the circles representing completed steps, and adjusts the width of the progress bar based on the progress made.
-
-Please note that if you want to modify the behavior or add more functionality to the progress steps widget, you can do so by modifying the JavaScript code accordingly.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Styling
-The CSS styles provided in the `styles.css` file control the visual appearance of the progress steps widget. You can customize these styles to match your desired design.
+The JavaScript code in main.js provides the functionality for the blurry page preloader. It gradually increases the loading percentage and updates the text and blur effect accordingly. The blurring() function is responsible for this animation. It uses the scale() function to map the loading percentage to appropriate opacity and blur values.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Conclusion
@@ -116,7 +90,7 @@ Distributed under the MIT License.
 
 Alireza Mohafezatkar - https://www.linkedin.com/in/alireza-mohafezatkar/ - alireza.mohafezatkar@gmail.com
 
-Project Link: [https://github.com/mohafezatkar/simple-progress-steps-widget](https://github.com/mohafezatkar/simple-progress-steps-widget)
+Project Link: [https://github.com/mohafezatkar/blurry-page-preloader](https://github.com/mohafezatkar/blurry-page-preloader)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
